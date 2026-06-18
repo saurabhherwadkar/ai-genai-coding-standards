@@ -22,6 +22,7 @@
 13. [README.md Standards](#readmemd-standards)
 14. [.gitignore](#gitignore)
 15. [External Configuration](#external-configuration)
+16. [Docker](#docker)
 
 ---
 
@@ -196,3 +197,10 @@
 - Document all configuration keys, their expected values, and defaults.
 - Load configuration at application startup and validate required values are present.
 - Use a consistent format for the config file (e.g., `.env`, `.yaml`, `.json`, `.properties`).
+
+---
+
+## Docker
+
+- Always create a `Dockerfile` at the root level of the project to containerize the application.
+- Always create a `docker-compose.yml` at the root level of the project to define and orchestrate multi-container setups, including the application and any dependent services (databases, caches, message brokers, etc.).
